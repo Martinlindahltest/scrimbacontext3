@@ -5,7 +5,7 @@ const { Provider, Consumer } = React.createContext()
 export default class ThemeContextProvider extends Component {
     render() {
         return (
-            <Provider vlaue="testvalue">
+            <Provider value="testvalue">
                 {this.props.children}
             </Provider>
         )
