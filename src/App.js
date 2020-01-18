@@ -63,7 +63,7 @@ export default class App extends Component {
     }
 
     handleChange(event) {
-        const {name, value} = event.target
+        const { name, value } = event.target
         this.setState({
             [name]: value
         })
@@ -74,23 +74,23 @@ export default class App extends Component {
             <div>
 
                 <form>
-                <input 
-                    type="text" 
-                    value={this.state.firstName} 
-                    name="firstName" 
-                    placeholder="First Name" 
-                    onChange={this.handleChange} 
-                />
-                <br />
-                <input 
-                    type="text" 
-                    value={this.state.lastName} 
-                    name="lastName" 
-                    placeholder="Last Name" 
-                    onChange={this.handleChange} 
-                />
-                <h1>{this.state.firstName} {this.state.lastName}</h1>
-            </form>
+                    <input
+                        type="text"
+                        value={this.state.firstName}
+                        name="firstName"
+                        placeholder="First Name"
+                        onChange={this.handleChange}
+                    />
+                    <br />
+                    <input
+                        type="text"
+                        value={this.state.lastName}
+                        name="lastName"
+                        placeholder="Last Name"
+                        onChange={this.handleChange}
+                    />
+                    <h1>{this.state.firstName} {this.state.lastName}</h1>
+                </form>
 
             </div>
         )
